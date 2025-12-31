@@ -325,4 +325,36 @@ footer .social-icons a:hover {
     padding-right: 10px;
     font-size: 1.3em;
   }
+
+}
+/* Tablet & Mobile */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 30px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--second-bg-color);
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .navigation a {
+        margin: 15px 0;
+        font-size: 1.1em;
+    }
+
+    .navigation.active {
+        display: flex;
+    }
 }
