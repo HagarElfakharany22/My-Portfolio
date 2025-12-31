@@ -327,6 +327,12 @@ footer .social-icons a:hover {
   }
 
 }
+.menu-toggle {
+    display: none;
+    font-size: 1.8em;
+    color: var(--main-color);
+    cursor: pointer;
+}
 /* Tablet & Mobile */
 @media (max-width: 768px) {
     header {
@@ -358,3 +364,4 @@ footer .social-icons a:hover {
         display: flex;
     }
 }
+
