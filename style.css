@@ -325,14 +325,15 @@ footer .social-icons a:hover {
     padding-right: 10px;
     font-size: 1.3em;
   }
-
 }
+/* Menu Toggle (hidden on desktop) */
 .menu-toggle {
     display: none;
     font-size: 1.8em;
     color: var(--main-color);
     cursor: pointer;
 }
+
 /* Tablet & Mobile */
 @media (max-width: 768px) {
     header {
@@ -364,4 +365,68 @@ footer .social-icons a:hover {
         display: flex;
     }
 }
+/* Timeline Sections (Education & Experience) */
+.timeline {
+    padding: 100px 10%;
+    background-color: var(--bg-color);
+}
 
+.timeline .title {
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--main-color);
+    margin-bottom: 50px;
+}
+
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.timeline-item {
+    background: #fff;
+    padding: 25px;
+    border-left: 5px solid var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-item h3 {
+    font-size: 1.2em;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.timeline-item span {
+    font-size: 0.9em;
+    color: #666;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    font-size: 0.95em;
+    color: #444;
+}
+
+.timeline-item ul {
+    padding-left: 20px;
+}
+
+.timeline-item ul li {
+    font-size: 0.95em;
+    color: #444;
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+.highlight {
+    font-weight: 600;
+    color: var(--main-color);
+}
